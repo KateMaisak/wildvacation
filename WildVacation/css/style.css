@@ -1,0 +1,1061 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-color: rgba(27, 30, 34, 1);
+}
+
+.container {
+    max-width: 1133px;
+    margin: auto;
+}
+
+header {
+    padding: 33px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.headernav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoimg {
+    margin-right: 33px;
+}
+
+.logonav {
+    display: flex;
+    align-items: center;
+}
+
+.mainnav {
+    display: flex;
+    align-items: center;
+}
+
+.mainnav ul {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.logonav ul {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.logo {
+    display: block;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+nav li:first-child {
+    margin-left: 0px;
+}
+
+nav li:last-child {
+    margin-left: 0px;
+}
+
+nav li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+}
+
+.noactive {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(196, 196, 196, 0.5);
+    text-decoration: none;
+
+}
+
+.active {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 21px;
+}
+
+.activeli {
+    display: inline-block;
+    padding: 10px 34px 10px;
+    border: solid 1px #ffb800;
+    border-radius: 10px;
+    margin-left: 35px;
+}
+
+.activeli:hover {
+    background-color: #FFB800;
+    color: #000;
+}
+.mobilemenu{
+    display: none;
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+    background-image: url(../images/list.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.startpage {
+    padding-top: 241px;
+    padding-bottom: 74px;
+    background-image: linear-gradient(to top, rgba(27, 30, 34, 1), rgba(27, 30, 34, 0.4), rgba(255, 255, 255, 0.15)), url(../images/rectangle\ 2.1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.mainpage {
+    position: relative;
+}
+
+.mainpage h1 {
+    width: 582px;
+    margin-bottom: 42px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.mainpage p {
+    width: 474px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    margin-bottom: 277px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 45px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.form {
+    width: 500px;
+    padding: 51px 70px 55px;
+    background-image: linear-gradient(to top, rgba(51, 51, 51, 1), rgba(51, 51, 51, 0.6));
+    border-radius: 10px;
+    position: absolute;
+    top: -72px;
+    right: -70px;
+}
+
+.form p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 23px;
+}
+
+input,
+select {
+    font-family: 'Montserrat', sans-serif;
+    width: 360px;
+    padding: 9px 9px 12px 9px;
+    border: solid 1px rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    margin-bottom: 22px;
+    background-color: rgba(51, 51, 51, 1);
+    outline: none;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+}
+
+.quicklysearch {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quicklysearch input {
+    width: 168px;
+}
+
+input::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+}
+
+input:focus::placeholder {
+    opacity: 0;
+}
+
+option {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+}
+
+.submit {
+    background-color: #FFB800;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    cursor: pointer;
+    border: none;
+}
+
+.search {
+    background-image: url(../images/ellipse.svg);
+    background-repeat: no-repeat;
+    background-position: 97% 50%;
+}
+
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.benefits>div {
+    text-align: center;
+}
+
+.world {
+    width: 179px;
+}
+
+.hunter, .bbq, .visa {
+    width: 248px;
+}
+
+.benefits p {
+    margin-top: 17px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 37px;
+}
+
+.card>div {
+    width: 362px;
+    height: 433px;
+    margin-bottom: 24px;
+    background-color: #23282F;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.pricetour {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    width: 250px;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 160px;
+}
+
+.pricetour .price {
+    width: 79px;
+    background-color: #FFB800;
+    margin: 0;
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 32px;
+}
+
+span {
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.pricetour .date {
+    flex-basis: 171px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    border-radius: 0px 6px 6px 0px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    color: #fff;
+}
+
+.actualp {
+    width: 321px;
+    margin-top: 16px;
+    margin-left: 20px;
+}
+
+.br {
+    width: 280px;
+    margin-top: 16px;
+    margin-left: 20px;
+}
+
+
+.card p {
+    flex-grow: 1;
+    width: 321px;
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 20px;
+}
+
+.card a {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    margin-bottom: 14px;
+}
+
+.cardtour:hover {
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+    border: none;
+    border-radius: 6px 6px 0px 0px;
+    color: #333333;
+    background-color: #fff;
+}
+
+.cardtour:hover a {
+    color: #333333;
+}
+
+.linkbuttondiv {
+    display: flex;
+    align-items: center;
+}
+
+.linkbutton {
+    display: inline-block;
+    text-decoration: none;
+    margin: auto;
+    padding: 12px 36px;
+    border: 1px solid #FFB800;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.linkbutton:hover {
+    background-color: #FFB800;
+    color: #000;
+}
+
+.smth {
+    background-image: linear-gradient(to top, rgba(27, 30, 34, 0.78), rgba(27, 30, 34, 0.75)), url(../images/image2.png);
+    background-size: cover;
+    margin-top: 72px;
+    margin-bottom: 60px;
+    text-align: center;
+    padding-top: 59px;
+    padding-bottom: 68px;
+}
+
+.cardnumber {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.number {
+    font-weight: 500;
+    font-size: 78px;
+    line-height: 58px;
+    color: #FFB800;
+    margin-bottom: 23px;
+}
+
+.info {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.blogdiv {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+}
+
+.blogdiv>div {
+    width: 552px;
+    height: 480px;
+}
+
+.travelblog {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.travelblog>div {
+    width: 264px;
+    height: 480px;
+    border-radius: 4px;
+}
+
+.mustvisit {
+    background-image: linear-gradient(to top, rgba(31, 31, 31, 0.65), rgba(31, 31, 31, 0.6)), url(../images/10places.png);
+    background-size: cover;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.tenplaces{
+    width: 521px;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 38px;
+    margin: 51px auto 28px;
+    color: #fff;
+}
+
+.dateplaces{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+}
+   
+.travelblog h3{
+    margin: 20px 20px 0px 20px;
+}
+
+.travelblog p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    flex-grow: 1;
+}
+
+.aboutp{
+    margin: 14px 20px 0px 20px;
+}
+
+.norway, .blogger{
+    background-color: #23282F;
+    display: flex;
+    flex-direction: column;
+}
+
+.like{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px 21px 20px;
+    display: flex;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+}
+.datelike{
+    width: 115px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bloggercomments{
+    width: 45px;
+    background-image: url(../images/chat.svg);
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bloggerlike{
+    width: 32px;
+    background-image: url(../images/likeyellow.svg);
+    background-repeat: no-repeat;
+    background-position: 0% center;
+}
+
+.norwaylike{
+    width: 32px;
+    background-image: url(../images/like.svg);
+    background-repeat: no-repeat;
+    background-position: 0% center;
+    color: rgba(255, 255, 255, 0.5);
+}
+.blogger:hover, .norway:hover, .mustvisit:hover{
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+    border: none;
+    border-radius: 6px 6px 0px 0px;
+    color: #333333;
+    background-color: rgb(175, 174, 174);
+}
+
+.blogger:hover p, .norway:hover p{
+    color: #23282F;
+}
+
+.comments{
+    display: flex;
+    justify-content: space-between;
+    width: 92px;
+}
+
+.comments p{
+    padding-left: 20px;
+}
+
+.reviewabout{
+    padding-top: 64px;
+    padding-bottom: 61px;
+    text-align: center;
+    background-image: url(../images/reviewbackground.svg);
+    background-repeat: no-repeat;
+    background-position: center 60%;
+}
+
+.review{
+    width: 924px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 30px auto 6px auto;
+}
+
+.namereview{
+    color: #FFB800;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+}
+.button{
+    margin-top: 32px;
+}
+.circle, .circleactive{
+    width: 8px;
+    height: 8px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: 12px;
+}
+
+.circleactive{
+    background-color: #fff;
+}
+
+.contacts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1026px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0px auto 12px auto;
+}
+
+.location, .tel, .socialmedia{
+    width: 320px;
+    display: flex;
+}
+.tel{
+    padding-left: 65px;
+}
+
+.socialmedia{
+    padding-left: 107px;
+}
+.contentlocation{
+    padding-left: 27px;
+    display: flex;
+    flex-direction: column;
+}
+
+.namelocation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 79px;
+    color: #FFB800;
+}
+
+.namelocation p{
+    margin-bottom: 15px;
+}
+
+.contentlocation a{
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+}
+
+.namemedia{
+    color: #ffb800;
+    margin-bottom: 10px;
+}
+
+.iconmedia img{
+    margin-right: 24px;
+}
+
+@media(max-width: 1133px) {
+    .conteiner {
+        max-width: 95%;
+    }
+    .mainnav{
+        display: none;
+    }
+    .logonav{
+        margin-left: 50px;
+        flex-direction: column;
+    }
+
+    .mobilemenu{
+        display: inline-block;
+        margin-right: 50px;
+
+    }
+    .form{
+        position: static;
+        margin: 0px auto 30px auto;
+
+    }
+    .mainpage{
+        text-align: center;
+    }
+    .mainpage h1{
+        width: 100%;
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    .mainpage p{
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .ruseng{
+        width: 210px;
+    }
+    .benefits p{
+        font-size: 15px;
+    }
+
+    .card{
+        justify-content: space-evenly;
+    }
+    .card > div{
+        width: 45%;
+        height: 510px;
+    }
+    .pricetour{
+        top: 237px;
+    }
+    .card img{
+        display: block;
+        width: 100%;
+    }
+
+    .contacts{
+        width: 95%;
+        justify-content: space-evenly;
+    }
+
+    .socialmedia, .tel, .location{
+        padding-left: 0px;
+        margin-top: 20px;
+    }
+
+    .namelocation{
+        align-items: flex-start;
+    }
+
+    .contentlocation{
+        padding-left: 40px;
+    }
+
+    .socialmedia{
+        flex-direction: row;
+    }
+
+    .namemedia{
+        margin-right: 15px;
+    }
+
+    .review{
+        width: 600px;
+    }
+
+    .blogdiv>div{
+        width: 95%;
+        height: 620px;
+        margin: auto;
+    }
+    
+    .travelblog>div{
+        width: 49%;
+        margin-top: 20px;
+        height: 620px;
+    }
+
+    .datelike{
+        width: 117px;
+    }
+}
+
+@media(max-width: 1030px){
+    .pricetour{
+        top: 195px;
+    }
+}
+@media(max-width: 950px){
+    .benefits{
+        justify-content: space-evenly;
+    }
+    .hunter, .bbq, .visa, .world {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    
+    .benefits p {
+        margin-top: 17px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+@media(max-width: 890px){
+    .pricetour{
+        top: 160px;
+    }
+
+    .card > div{
+        height: 450px;
+    }
+
+    .card p{
+        width: 285px;
+    }
+
+    h3{
+        font-size: 16px;
+        width: 285px;
+    }
+
+    .cardnumber {
+        justify-content: space-evenly;
+    }
+    
+    .number {
+        font-size: 40px;
+        line-height: 30px;
+    }
+    
+    .info {
+        font-size: 15px;
+        line-height: 16px;
+        margin-bottom: 30px;
+    }
+
+    .blogdiv>div{
+        height: 550px;
+    }
+    
+    .travelblog>div{
+        height: 550px;
+    }
+}
+
+@media(max-width: 790px){
+    .pricetour{
+        top: 140px;
+    }
+.actualp, .br{
+    width: 250px;
+}
+
+.blog h2{
+    margin-top: 30px;
+}
+
+.smth{
+    display: none;
+}
+
+.travelblog h3{
+    width: 240px;
+}
+}
+
+@media(max-width: 660px){
+    .startpage{
+        padding-top: 180px;
+    }
+
+    .mobilemenu{
+        margin-right: 5px;
+    }
+    
+    .form {
+        width: 350px;
+        padding: 35px;
+    }
+
+    .quicklysearch input {
+        width: 140px;
+    }
+
+    input::placeholder {
+        font-size: 11px;
+        line-height: 12px;
+    }
+    select{
+        font-size: 11px;
+    }
+    .input, select, .search, .submit, .quicklysearch{
+        width: 300px;
+    }
+
+    .mainpage h1{
+        font-size: 26px;
+    }
+
+    .mainpage p{
+        font-size: 14px;
+    }
+    .actualp, .br{
+        width: 95%;
+        font-size: 14px;
+    }
+    .card p{
+        width: 250px;
+    }
+
+    .pricetour{
+        top: 300px;
+    }
+
+    .card > div{
+        width: 95%;
+        height: 650px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    .review{
+        width: 450px;
+        font-size: 18px;
+    }
+
+    .comments{
+        display: none;
+    }
+}
+
+@media(max-width: 600px){
+    .card > div{
+        height: 600px;
+    }
+
+    .pricetour{
+        top: 270px;
+    }
+
+    .blogdiv>div{
+        height: 480px;
+    }
+    
+    .travelblog>div{
+        height: 480px;
+    }
+
+    .travelblog h3{
+        width: 200px;
+    }
+    .tenplaces{
+        width: 400px;
+        font-size: 26px;
+        line-height: 30px;
+    }
+}
+
+@media(max-width: 580px){
+    .card > div{
+        height: 550px;
+    }
+
+    .mainpage h1{
+        font-size: 20px;
+    }
+
+    .mainpage p{
+        font-size: 11px;
+    }
+
+    .logonav{
+        margin-left: 10px;
+    }
+    .travelblog p{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 550px){
+    .pricetour{
+        top: 200px;
+    }
+}
+
+@media(max-width: 500px){
+    .pricetour{
+        top: 190px;
+    }
+
+    .card > div{
+        height: 480px;
+    }
+
+    .review{
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .travelblog h3{
+        width: 150px;
+        font-size: 14px;
+    }
+
+
+}
+
+@media(max-width: 420px){
+    .pricetour{
+        top: 150px;
+    }
+
+    .mainpage h1{
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .mainpage p{
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .form {
+        width: 350px;
+        padding: 15px;
+    }
+    .form p{
+        font-size: 14px;
+    }
+    .quicklysearch input {
+        width: 130px;
+    }
+
+    input::placeholder {
+        font-size: 8px;
+        line-height: 10px;
+    }
+    select{
+        font-size: 8px;
+    }
+    .input, select, .search, .submit, .quicklysearch{
+        width: 270px;
+        margin: auto;
+    }
+
+    .submit, .quicklysearch{
+        margin-top: 15px;
+    }
+
+    .travelblog{
+        display: none;
+    }
+}
+@media(max-width: 370px){
+    .form {
+        width: 310px;
+        padding: 15px;
+    }
+
+    .quicklysearch input {
+        width: 110px;
+    }
+
+    .input, select, .search, .submit, .quicklysearch{
+        width: 250px;
+        margin: auto;
+    }
+    .submit, .quicklysearch{
+        margin-top: 15px;
+    }
+}
+
+@media(max-width: 340px){
+    .pricetour{
+        top: 130px;
+    }
+    .card > div{
+        height: 430px;
+    }
+}
